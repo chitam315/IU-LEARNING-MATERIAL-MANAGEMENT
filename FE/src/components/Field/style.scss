@@ -1,0 +1,43 @@
+#labelInField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 50px;
+
+    p {
+        width: 180px;
+        // font-family: ab;
+        span {
+            color: #2C3591;
+        }
+    }
+    small {
+        font-family: main;
+        font-size: 14px;
+    }
+    textarea,
+    input[type="text"] {
+        flex: 1;
+        height: 58px;
+        padding: 0 20px;
+        outline: none;
+        border: 1px solid #dbe0df;
+        font-family: main;
+        font-size: 16px;
+        &[disabled] {
+            cursor: no-drop;
+            background: #e8e8e8;
+        }
+    }
+    textarea {
+        padding: 15px 20px;
+        resize: none;
+        font-family: Main;
+        height: 120px;
+    }
+    &:last-child {
+        p {
+            align-self: self-start;
+        }
+    }
+}

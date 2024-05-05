@@ -1,0 +1,60 @@
+import styled from "styled-components";
+
+export const SelectStyle = styled.div`
+  position: relative;
+  height: 58px;
+  flex: 1;
+  .head {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    line-height: 58px;
+    padding: 0 25px;
+    border: 1px solid #dbe0df;
+    cursor: pointer;
+    // @include overtext(1);
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      width: 12px;
+      height: 8px;
+      background: url("../img/arrow-bottom.png") no-repeat;
+      right: 25px;
+    }
+  }
+
+  .sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f8f8f8;
+    z-index: 100;
+
+    a {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      height: 58px;
+      line-height: 60px;
+      padding: 0 25px;
+      border: 1px solid #dbe0df;
+      width: 100%;
+      margin-top: -1px;
+      display: block;
+      &:hover {
+        background: #f1f1f1;
+      }
+    }
+  }
+`;

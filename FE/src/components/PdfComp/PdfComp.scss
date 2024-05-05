@@ -1,0 +1,35 @@
+.pdf-container {
+    text-align: center;
+
+    button {
+        margin-right: 10px;
+        background: #3f51b5;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        width: 100px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px 1px #ccc;
+    }
+
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .react-pdf__Page {
+        width: 70% !important;
+
+        max-width: 600px; /* A4 width in millimeters */
+        margin: 10px auto; /* Center the container horizontally */
+    }
+
+    .react-pdf__Page__canvas {
+        border: 1px solid darkgrey;
+        height: 100% !important;
+        width: 100% !important;
+        // padding-bottom: 141% !important;
+        box-shadow: 5px 5px 5px 1px #ccc;
+        border-radius: 5px;
+    }
+}
